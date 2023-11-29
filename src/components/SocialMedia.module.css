@@ -1,0 +1,31 @@
+.socialMedia_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    width: 19rem;
+    position: relative;
+    height: 100px;
+    border: 2px solid rgb(253, 198, 157);
+    background-color: rgb(254, 250, 231);
+    border-radius: 0.6rem;
+}
+
+
+.socialMedia_title{
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.socialMedia_icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid rgb(249, 232, 219);
+}

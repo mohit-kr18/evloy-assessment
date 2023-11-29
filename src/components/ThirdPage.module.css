@@ -1,0 +1,19 @@
+.dataset_items{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.thirdPage_wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.thirdPage_wrapper span{
+ color: rgb(249, 87, 0);
+ 
+}

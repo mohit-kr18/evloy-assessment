@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: #fefae7;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 2rem;
+
+}
+
+.header_items{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+}
