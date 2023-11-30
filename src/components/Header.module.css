@@ -9,6 +9,7 @@
     top: 0;
     justify-content: space-between;
     background-color: #fefae7;
+    z-index: 99999;
 }
 
 .title{

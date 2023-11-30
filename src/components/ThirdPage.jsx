@@ -6,6 +6,8 @@ import puzzle from '../assets/puzzle.png'
 import meta from '../assets/meta.png'
 import quora from '../assets/quora.png'
 import trending from '../assets/trending.png'
+import curveline from '../assets/curveline.png'
+import underline from '../assets/underline.svg'
 
 const ThirdPage = () => {
 
@@ -28,7 +30,7 @@ const ThirdPage = () => {
         },
         {
             icon:trending,
-            title:"Go to google Trends and search for increasing/Decreasing Markets"
+            title:"Go to google Trends and search for increasing Markets"
         },
         {
             icon:chat,
@@ -39,12 +41,28 @@ const ThirdPage = () => {
 
     return (
         <div className={classes.thirdPage_wrapper}>
-            <h1>The <span>Winning Formula </span> Revealed</h1>
+            <h1 className={classes.underline_wrapper}>
+                <div>The</div>
+                <div className={classes.underline_text}>
+                    <span>Winning Formula</span>
+                    <img src={underline} alt="" />
+                </div>
+                <div>Revealed</div>
+            </h1>
          <div className={classes.dataset_items}>
             {
-                dataSet.map((data)=> <SocialMedia data={data} />)
+                dataSet.map((data, index)=>{
+                    const index_val = `index_${index}`
+                    return (<SocialMedia key={index} data={data} index={index_val} />)
+                }
+                 
+                 )
+               
             }
-         </div>   
+            
+         </div>
+         <img className={classes.curve_image} src={curveline} alt="" />
+            
         </div>
     );
 }
