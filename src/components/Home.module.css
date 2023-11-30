@@ -154,3 +154,12 @@
     align-items: center;
     padding: 0.6rem;
 }
+.underline_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.underline_text{
+    display: flex;
+    flex-direction: column;   
+}

@@ -13,7 +13,7 @@ import star from '../assets/star.png'
 import trophy from '../assets/trophy.png'
 import attention from '../assets/attention.png'
 import { AiFillSound } from "react-icons/ai";
-
+import underlineRed from '../assets/underlineRed.svg'
 
 const Home = () =>{
     return (
@@ -23,7 +23,15 @@ const Home = () =>{
                 <div className={classes.second_heading}>Golden Scaling gateway for all Ecom Businesses & Digital 
                 <br/>Products Owners selling on Etsy Marketplace </div>
                 <div className={classes.third_heading}>
-                    Skyrocket Your Etsy Business<span><GiShoppingCart size={35} color='rgb(249, 87, 0)'/></span>By<br/> <span>Finding The<span><img className={classes.icons} src={badge} alt="" /></span>Winning Products </span>And<br/>
+                    <div className={classes.underline_wrapper}>
+                        <div className={classes.underline_text}>
+                            <div>Skyrocket Your Etsy Business</div>
+                            <img  src={underlineRed} alt=""  stroke='#88970'/>
+                        </div>
+                    <span><GiShoppingCart size={35} color='rgb(249, 87, 0)'/></span>By
+                    </div>
+                     <span>Finding The<span>
+                     <img className={classes.icons} src={badge} alt="" /></span>Winning Products </span>And<br/>
                     Copying Them For Your Instant Success
                 </div>
             </div>
